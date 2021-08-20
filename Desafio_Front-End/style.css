@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(255, 255, 255);
+  color: white;
+  font: normal 20pt Arial;
+  width: 75%;
+  margin: right;
+
+  font-family: sans-serif;
+
+}
+h1 {
+  color: #6603c9;
+}
+h5 {
+  color: #a1a3a3;
+}
+h6 {
+  color: #a1a3a3;
+}
+h4 {
+  color: #434343;
+}
+
+main {
+    background: linear-gradient(right, green, yellow, blue);
+}

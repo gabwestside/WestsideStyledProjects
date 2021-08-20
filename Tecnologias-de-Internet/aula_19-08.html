@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01</title>
+    <script>
+        function alertMensage() {
+            alert('Preencha todos os espaços')
+        }
+        function alertMensage2() {
+            alert('Escreva um feedback relevante')
+        }
+        function alertMensage3() {
+            alert('Atente-se a opção abaixo')
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="https://www.google.com.br/" method=”GET”>
+            <input type="hidden" name="aluno_matricula" value="54321">
+            <input type="hidden" name="aluno_cpf" value="1234567891011">
+            User:<br /> <input type="text" name="Text"> <br />
+
+            Tipo de pessoa:<br /> <select onchange="alertMensage3()" name="tipo_pessoa">
+                <option value="">--Selecione uma Opção--</option>
+                <option value="F">Fisica</option>
+                <option value="J">Juridica</option>
+            </select><br />
+            Senha:<br /> <input type="password" name="Password"> <br /><br>
+
+            Opções:<br />
+            <input type="checkbox" name="name1"> Bicicleta </input> <br />
+            <input type="checkbox" name=""> Geladeira </input> <br />
+            <input type="checkbox" name=""> TV </input> <br />
+
+            <p>Deixe seu feedback!</p>
+            <textarea onkeypress="alertMensage2()" cols=40 rows=5 name='comentario'>Deixe seu comentário</textarea><br>
+
+            Charset: <input type="text" name="Charset" placeholder="UTF-8" value="UTF-8"><br /> <br />
+
+            <input type="submit" name="Enviar">
+
+            <button onclick="alertMensage()">Ajuda</button>
+        </form>
+    </div>
+</body>
+
+</html>
