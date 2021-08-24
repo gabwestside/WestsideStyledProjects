@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Light Effect</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <section>
+        <img src="assets/bg.jpg" id="bg" alt="background">
+        <img src="assets/moon.png" id="moon" alt="moon">
+        <img src="assets/mountain.png" id="mountain" alt="mountain">
+        <img src="assets/road.png" id="road" alt="road">
+        <h2 id="text">Moon Light</h2>
+    </section>
+
+    <script type="text/javascript">
+        let bg = document.getElementsById("#bg");
+        let moon = document.getElementsById("moon");
+        let mountain = document.getElementsById("mountain");
+        let road = document.getElementsById("road");
+        let text = document.getElementsById("text");
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = -value * 0.15 + 'px';
+            text.style.top = -value * 1 + 'px';
+        })
+    </script>
+</body>
+
+</html>
