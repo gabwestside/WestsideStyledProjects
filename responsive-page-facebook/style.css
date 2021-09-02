@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    position: relative;
+    background: linear-gradient(120deg, #fff, #fff 62%, #3b5998 62%, #3b5998 100%);
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 50px;
+    margin-right: 20px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    color: #2d88ff;
+}
+
+.app {
+    position: absolute;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 10px 20px;
+    color: #3b5998;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.app ion-icon {
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+
+.app:hover {
+    background: #2d88ff;
+    color: #fff;
+}
+
+.contentBx {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    max-width: 800px;
+}
+
+.text h2 {
+    font-size: 6em;
+    color: #3b5998
+}
+
+.text p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.text h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.btn {
+    background: #3b5998;
+    color: #fff;
+    display: inline-flex;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    margin: 5px 20px 5px 0;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #2d88ff;
+}
+
+.btn ion-icon {
+    margin-right: 10px;
+    font-size: 1.4em;
+}
