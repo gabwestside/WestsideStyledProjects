@@ -122,3 +122,37 @@ header ul li a.active {
     margin-right: 10px;
     font-size: 1.4em;
 }
+
+.imgBx img {
+    margin-top: 20px;
+    margin-left: 50px;
+    max-width: 240px;
+    display: none;
+}
+
+.imgBx img.active{
+    display: block;
+}
+
+.dots {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dots .dot {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: rgba(255,255,255,0.25);
+    display: inline-flex;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.dots .dot.active {
+    background: #fff;
+}
