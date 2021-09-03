@@ -76,7 +76,7 @@ header ul li a.active {
     color: #fff;
 }
 
-.contentBx {
+.contentBX {
     width: 100%;
     display: flex;
     align-items: center;
@@ -145,8 +145,8 @@ header ul li a.active {
 
 .dots .dot {
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background: rgba(255,255,255,0.25);
     display: inline-flex;
     margin: 5px;
@@ -155,4 +155,87 @@ header ul li a.active {
 
 .dots .dot.active {
     background: #fff;
+}
+
+.sci {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.sci li a{
+    font-size: 1.8em;
+    color: #3b5998;
+}
+
+.sci li a:hover {
+    color: #2d88ff;
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 30px;
+        justify-content: space-between;
+    }
+
+    .main {
+        padding: 30px;
+        background: #fff;
+    }
+
+    .app {
+        display: none;
+    }
+
+    .contentBX {
+        flex-direction: column-reverse;
+        margin: 100px 0;
+    }
+
+    .imgBx img {
+        margin: 0;
+    }
+
+    .dots {
+        position: relative;
+        top: initial;
+        transform: none;
+        right: initial;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .dots .dot {
+        width: 20px;
+        height: 20px;
+        background: #3b5998;
+        opacity: 0.2;
+    }
+
+    .dots .dot.active {
+        background: #3b5998;
+        opacity: 1;
+    }
+
+    .contentBX .text {
+        text-align: center;
+    }
+
+    .contentBX .text h2 {
+        font-size: 3em;
+    }
+
+    .sci {
+        position: absolute;
+        bottom: 30px;
+        display: flex;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
