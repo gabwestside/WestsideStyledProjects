@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #e8eaf6;
+}
+
+.iPhone {
+  margin-top: -100px;
+  position: relative;
+  width: 230px;
+  height: 410px;
+  background: url(iPhone.png) #fff;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(-40deg) skew(20deg, 10deg);
+  box-shadow: -120px 110px 5px rgba(0, 0, 0, 0.08);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.iPhone:hover {
+  box-shadow: -140px 140px 10px rgba(0, 0, 0, 0.08);
+  transform: rotate(-40deg) skew(20deg, 10deg) translate(30px, -30px);
+}
+
+.iPhone:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -90px;
+  width: 90px;
+  height: 100%;
+  background: url(text.png) #f2f2f2;
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-origin: right;
+  transform: skewY(-43deg);
+}
+
+.iPhone:after {
+  content: "";
+  position: absolute;
+  bottom: -82px;
+  left: 0;
+  width: 100%;
+  height: 82px;
+  background: url(logo.png) #e5e5e5;
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-origin: top;
+  transform: skewX(-47deg);
+}
