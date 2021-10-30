@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -72,5 +72,4 @@
     left: 0;
     top: 0;
     transition: 0.3s;
-    /* opacity: ; */
-}
+} */
