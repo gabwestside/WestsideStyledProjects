@@ -1,16 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordion menu</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    
-</body>
+  <body>
+    <div class="middle">
+      <div class="menu">
+        <li class="item" id='profile'>
+          <a href="#profile" class="btn"><i class="fas fa-user"></i>Profile</a>
+          <div class="smenu">
+            <a href="#">Post</a>
+            <a href="#">Picture</a>
+          </div>
+        </li>
 
+        <li class="item" id='messages'>
+          <a href="#messages" class="btn"
+            ><i class="fas fa-envelope-open"></i>Messages</a
+          >
+          <div class="smenu">
+            <a href="#">New</a>
+            <a href="#">Sent</a>
+            <a href="#">Spam</a>
+          </div>
+        </li>
+
+        <li class="item" id='settings'>
+          <a href="#settings" class="btn"><i class="fas fa-cog"></i>Settings</a>
+          <div class="smenu">
+            <a href="#">Password</a>
+            <a href="#">Languages</a>
+          </div>
+        </li>
+
+        <li class="item">
+          <a class="btn" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
+        </li>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/2dffa1e607.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
