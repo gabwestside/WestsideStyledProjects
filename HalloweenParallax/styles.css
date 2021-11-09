@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&diplay+swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fruktur", cursive;
+}
+
+body {
+  background: #010405;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+section img::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #010405, transparent);
+  z-index: 10000;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+}
+
+.sec {
+  position: relative;
+  padding: 100px;
+  text-align: center;
+}
+
+.sec h2 {
+  font-size: 5em;
+  color: #ff9425;
+  margin-bottom: 20px;
+}
+
+.sec p {
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-family: consolas;
+}
